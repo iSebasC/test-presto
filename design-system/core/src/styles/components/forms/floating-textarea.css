@@ -1,0 +1,22 @@
+@layer components {
+  .floating-textarea {
+    @apply appearance-none disabled:bg-grey-colors-100 disabled:cursor-not-allowed disabled:opacity-50 leading-[1.10] rounded-[20px] w-full outline-none py-2.5 px-[21px] text-sm font-extralight border border-shades-off-purple-300 bg-white text-grey-colors-400 transition-[padding] duration-200 ease-in-out h-[224px] lg:py-[13px] lg:px-[24px] resize-none;
+  }
+
+  .floating-field-container:has(.floating-textarea) .floating-label {
+    @apply top-[20px] translate-y-0;
+  }
+
+  /* Estado “activo” del label cuando el input tiene foco o contenido */
+  .floating-field-container:has(.floating-textarea:focus) .floating-label,
+  .floating-field-container:has(.floating-textarea:not(:placeholder-shown)) .floating-label {
+    @apply top-[8px] translate-y-0 text-[12px] font-medium leading-[12px] block lg:top-[9px] lg:text-[14px] lg:leading-[14px];
+  }
+
+  /* Estado “activo” del input (padding elevado) */
+  .floating-field-container:has(.floating-textarea:focus) .floating-textarea,
+  .floating-field-container:has(.floating-textarea:not(:placeholder-shown)) .floating-textarea {
+    @apply pt-[22px] pb-[7px] px-[21px] lg:pt-[25.58px] lg:pb-[8px] lg:px-[24px];
+  }
+
+}

@@ -1,0 +1,18 @@
+@utility container {
+  padding-inline: 20px;
+  margin-inline: auto;
+  max-width: none;
+
+  @variant md {
+    padding-inline: 40px;
+  }
+
+  @variant lg {
+    padding-inline: 50px;
+  }
+
+  @variant xl {
+    padding-inline: 79px;
+    max-width: 1440px;
+  }
+}

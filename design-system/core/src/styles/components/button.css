@@ -1,0 +1,21 @@
+@layer components {
+  .btn {
+    @apply flex h-[42px] cursor-pointer items-center justify-center gap-[8px] rounded-full text-[14px] font-medium uppercase transition-colors disabled:pointer-events-none disabled:opacity-50 lg:h-[50px];
+
+    & svg {
+      @apply text-[23.333px] lg:text-[20px];
+    }
+  }
+
+  .btn-primary {
+    @apply bg-light-green-500 py-[7px] px-[29px] text-white hover:bg-light-green-600;
+  }
+
+  .btn-secondary-outline-white {
+    @apply border border-white px-[18.74px] py-[9px] leading-[20px] text-white hover:border-shades-off-purple-50 hover:bg-shades-off-purple-50 hover:text-shades-off-purple-500 lg:px-[24.74px] lg:py-[15px] lg:leading-[18px];
+  }
+
+  .btn-secondary-outline {
+    @apply border border-light-green-200 px-[18.74px] py-[9px] leading-[20px] text-light-green-700 hover:border-shades-off-purple-50 hover:bg-shades-off-purple-50 hover:text-shades-off-purple-500 lg:px-[24.74px] lg:py-[15px] lg:leading-[18px];
+  }
+}

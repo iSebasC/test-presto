@@ -1,0 +1,13 @@
+@layer components {
+
+  /* El propio select */
+  .floating-select {
+    @apply appearance-none w-full disabled:bg-grey-colors-100 disabled:cursor-not-allowed disabled:opacity-50 leading-[1.10] outline-none pt-5.5 pb-[7px] px-[21px] text-sm h-[45px] font-extralight border border-shades-off-purple-300 rounded-full bg-white text-grey-colors-400 transition-[padding] duration-200 ease-in-out lg:h-12.5 lg:pt-[25.58px] lg:pb-[8px] lg:px-[24px];
+  }
+
+  /* La etiqueta siempre arriba */
+  .floating-field-container:has(.floating-select) .floating-label {
+    @apply top-[8px] translate-y-0 text-[12px] font-medium leading-[12px] lg:top-[9px] lg:text-[14px] lg:leading-[14px];
+  }
+
+}

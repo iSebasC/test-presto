@@ -1,0 +1,12 @@
+@layer components {
+
+  /* La etiqueta flotante */
+  .floating-label {
+    @apply absolute left-[21px] top-1/2 -translate-y-1/2 leading-[24px] text-sm font-light text-grey-colors-400 transition-all duration-200 ease-in-out pointer-events-none lg:left-[24px];
+
+    &>.floating-label-required {
+      @apply relative inline-block left-0 text-alert-notifications-error;
+    }
+  }
+
+}

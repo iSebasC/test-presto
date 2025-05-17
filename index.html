@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <!-- <button class="btn btn-primary">Boton</button>
+
+        <div class="floating-field-container">
+          <input
+            type="email"
+            class="floating-input"
+            id="emailInput"
+            placeholder=" "
+          />
+          <label for="emailInput" class="floating-label">
+            Email
+            <div class="floating-label-required">*</div>
+          </label>
+        </div>
+
+        <div class="floating-field-container">
+          <textarea class="floating-textarea" placeholder=""></textarea>
+          <label class="floating-label">
+            Message
+            <span class="floating-label-required"> * </span>
+          </label>
+        </div> -->
+
+        <br />
+
+        <div class="font-sans p-6 space-y-6 text-[#2E2257]">
+          <h2
+            class="text-[20px] leading-[24px] font-medium text-shades-off-purple-900"
+          >
+            Archivos Adjuntados <span class="font-light">(DNI y cóyuge)</span>
+          </h2>
+
+          <div
+            class="w-[771px] h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+          >
+            <div
+              class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+            >
+              <img
+                src="/img/cloud_upload.svg"
+                alt="Subir archivo"
+                class="w-[27.64px] h-[27.64px]"
+              />
+            </div>
+
+            <p
+              class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+            >
+              Elige un archivo o arrástralo y suéltalo aquí
+            </p>
+            <p
+              class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+            >
+              JPEG, PNG y formatos PDF, hasta 50MB
+            </p>
+
+            <button
+              class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+            >
+              EXPLORAR ARCHIVO
+            </button>
+          </div>
+
+          <!-- Lista de archivos cargados -->
+          <div class="flex flex-wrap gap-4">
+            <!-- Card archivo 1 -->
+            <div
+              class="w-[376px] h-[82px] flex items-center justify-between border border-shades-off-purple-200 rounded-2xl px-4 py-2"
+            >
+              <!-- Icono + Info -->
+              <div class="flex items-center gap-2">
+                <img src="/img/file.svg" alt="Archivo" class="w-5 h-6" />
+                <div>
+                  <p
+                    class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                  >
+                    Lorem Ipsum
+                  </p>
+                  <p
+                    class="text-[12px] leading-[20px] font-light text-shades-off-purple-900"
+                  >
+                    60 KB of 120 KB
+                  </p>
+                </div>
+              </div>
+
+              <!-- Acciones -->
+              <div class="flex gap-2">
+                <button
+                  class="w-9 h-9 flex items-center justify-center rounded-full border border-shades-off-purple-200"
+                >
+                  <img
+                    src="/img/download.png"
+                    alt="Descargar"
+                    class="w-5 h-5"
+                  />
+                </button>
+                <button
+                  class="w-9 h-9 flex items-center justify-center rounded-full border border-shades-off-purple-200"
+                >
+                  <img src="/img/delete.svg" alt="Eliminar" class="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            <!-- Card archivo 2 -->
+            <div
+              class="w-[376px] h-[82px] flex items-center justify-between border border-shades-off-purple-200 rounded-2xl px-4 py-2"
+            >
+              <!-- Icono + Info -->
+              <div class="flex items-center gap-2">
+                <img src="/img/file.svg" alt="Archivo" class="w-5 h-6" />
+                <div>
+                  <p
+                    class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                  >
+                    Lorem Ipsum
+                  </p>
+                  <p
+                    class="text-[12px] leading-[20px] font-light text-shades-off-purple-900"
+                  >
+                    60 KB of 120 KB
+                  </p>
+                </div>
+              </div>
+
+              <!-- Acciones -->
+              <div class="flex gap-2">
+                <button
+                  class="w-9 h-9 flex items-center justify-center rounded-full border border-shades-off-purple-200"
+                >
+                  <img
+                    src="/img/download.png"
+                    alt="Descargar"
+                    class="w-5 h-5"
+                  />
+                </button>
+                <button
+                  class="w-9 h-9 flex items-center justify-center rounded-full border border-shades-off-purple-200"
+                >
+                  <img src="/img/delete.svg" alt="Eliminar" class="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+@layer components {
+  .floating-field-container {
+    @apply relative w-full;
+  }
+}

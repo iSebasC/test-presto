@@ -1,0 +1,51 @@
+@theme {
+  /* === Puntos de quiebre o (Breakpoint) === */
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1040px;
+  --breakpoint-xl: 1440px;
+  /* === Tipografía === */
+  --font-geologica: 'Geologica Variable', sans-serif;
+  /* === Colores personalizados === */
+  /* Purple */
+  --color-shades-off-purple-50: #f1eefa;
+  --color-shades-off-purple-100: #d2c9f0;
+  --color-shades-off-purple-200: #bcafe8;
+  --color-shades-off-purple-300: #9e8bde;
+  --color-shades-off-purple-400: #8b75d8;
+  --color-shades-off-purple-500: #6e52ce;
+  --color-shades-off-purple-600: #644bbb;
+  --color-shades-off-purple-700: #4e3a92;
+  --color-shades-off-purple-800: #3b2a6f;
+  --color-shades-off-purple-900: #2E2257;
+  /* Green */
+  --color-light-green-50: #eefbf9;
+  --color-light-green-100: #cbf3ec;
+  --color-light-green-200: #b1ede2;
+  --color-light-green-300: #78e0cd;
+  --color-light-green-400: #78e0cd;
+  --color-light-green-500: #56d8c2;
+  --color-light-green-600: #4ec5b0;
+  --color-light-green-700: #3d9989;
+  --color-light-green-800: #2b7a6f;
+  --color-light-green-900: #1f5e58;
+  /* Grey */
+  --color-grey-colors-50: #efefef;
+  --color-grey-colors-100: #cecece;
+  --color-grey-colors-200: #b7b7b7;
+  --color-grey-colors-300: #969696;
+  --color-grey-colors-400: #818181;
+  --color-grey-colors-500: #626262;
+  --color-grey-colors-600: #595959;
+  --color-grey-colors-700: #464646;
+  --color-grey-colors-800: #353535;
+  --color-grey-colors-900: #242424;
+
+  /* Notification */
+  --color-alert-notifications-success: #40c02b;
+  --color-alert-notifications-info: #2466fd;
+  --color-alert-notifications-error: #ff3b30;
+  /* Whatsapp */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1abb56;
+}
