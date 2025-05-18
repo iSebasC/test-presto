@@ -177,6 +177,148 @@
             </div>
           </div>
         </div>
+
+        <br /><br />
+
+        <div class="space-y-6 text-shades-off-purple-900">
+          <!-- Título -->
+          <h2
+            class="text-[20px] leading-[24px] font-medium text-shades-off-purple-900"
+          >
+            Datos para el depósito
+          </h2>
+
+          <div class="flex gap-4">
+            <button
+              class="w-[249.58px] h-[55px] rounded-[10px] bg-shades-off-purple-50 text-shades-off-purple-900 text-[16px] leading-[20px] font-normal text-center"
+            >
+              Para Empresas
+            </button>
+
+            <button
+              class="w-[249.58px] h-[55px] rounded-[10px] bg-light-green-50 text-light-green-700 text-[16px] leading-[20px] font-normal text-center"
+            >
+              Para Instituciones
+            </button>
+          </div>
+
+          <p class="text-[16px] leading-[20px] font-light text-[#000]">
+            Realiza tu depósito, completa tus datos, ¡y listo! Tu saldo
+            aparecerá en tu Billetera Digital.
+          </p>
+
+          <div class="overflow-x-auto">
+            <table
+              class="w-[1010px] h-[312px] table-fixed border border-shades-off-purple-100 rounded-[10px] text-left text-[16px] leading-[20px] text-shades-off-purple-900 border-separate mb-4"
+              style="border-spacing: 0"
+            >
+              <thead>
+                <tr>
+                  <th
+                    class="border border-shades-off-purple-100 px-4 py-3 font-normal rounded-tl-[10px]"
+                  >
+                    NOMBRE DE LA EMPRESA
+                  </th>
+                  <th
+                    class="border border-shades-off-purple-100 px-4 py-3 font-normal rounded-tr-[10px]"
+                  >
+                    SOCIEDAD PERUANA DEL DESARROLLO EN BENES RAICES SA
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    class="border border-shades-off-purple-100 px-4 py-3 font-extralight"
+                  >
+                    Entidad Bancaria
+                  </td>
+                  <td
+                    class="border border-shades-off-purple-100 px-4 py-3 font-extralight"
+                  >
+                    Banco BBVA Continental
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="border border-shades-off-purple-100 px-4 py-3 font-extralight"
+                  >
+                    Cuenta corriente en Dólares (US$)
+                  </td>
+                  <td
+                    class="border border-shades-off-purple-100 px-4 py-3 font-extralight"
+                  >
+                    0011-0160-0200310021-97
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="border border-shades-off-purple-100 px-4 py-3 font-extralight rounded-bl-[10px]"
+                  >
+                    Código de Cuenta Interbancario (CCI)
+                  </td>
+                  <td
+                    class="border border-shades-off-purple-100 px-4 py-3 font-extralight rounded-br-[10px]"
+                  >
+                    0011-160-0200310021-97
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <hr
+            class="w-[1010px] border-t border-shades-off-purple-200 opacity-30 mt-6 mb-8"
+          />
+
+          <div class="flex flex-wrap gap-4 mt-8">
+            <!-- Campo Monto -->
+            <div class="floating-field-container w-[480px]">
+              <input
+                type="text"
+                id="montoInput"
+                placeholder=" "
+                class="floating-input w-[480px] h-[54px] border border-shades-off-purple-300 rounded-[50px] pt-2.5 pr-6 pb-2.5 pl-6"
+              />
+              <label
+                for="montoInput"
+                class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light"
+              >
+                Monto (US$)
+                <span class="text-red-500">*</span>
+              </label>
+            </div>
+
+            <!-- Campo Adjuntar comprobante -->
+            <div class="w-[480px] h-[54px] relative">
+              <input
+                type="file"
+                id="comprobanteInput"
+                class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
+              />
+              <div
+                class="w-full h-full border border-shades-off-purple-300 rounded-[50px] flex items-center justify-between px-6"
+              >
+                <label
+                  for="comprobanteInput"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light"
+                >
+                  Adjuntar comprobante <span class="text-red-500">*</span>
+                </label>
+                <img
+                  src="/img/link.svg"
+                  alt="Adjuntar"
+                  class="w-5 h-5 pointer-events-none"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón -->
+          <div>
+            <button class="btn btn-primary">ENVIAR SOLICITUD</button>
+          </div>
+        </div>
       </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
