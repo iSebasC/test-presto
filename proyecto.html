@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <!-- Título general -->
+        <h2
+          class="text-shades-off-purple-900 font-medium text-[20px] leading-[24px] mb-6"
+        >
+          Proyectos inmobiliarios
+        </h2>
+
+        <!-- Card de proyecto -->
+        <div
+          class="w-[432px] h-[630px] bg-white text-shades-off-purple-900 overflow-hidden"
+        >
+          <div class="relative">
+            <img
+              src="/img/proyecto.jpg"
+              alt="Agente inmobiliario"
+              class="w-full h-[246px] object-cover rounded-t-3xl"
+            />
+            <div
+              class="absolute bottom-[-15px] left-5 w-[163px] h-[30px] bg-shades-off-purple-600 rounded-[20px] px-[12.71px] py-[2.31px] flex items-center justify-center gap-[6px]"
+            >
+              <span class="text-white text-[14px] font-light leading-[18px]"
+                >Modalidad:</span
+              >
+              <span class="text-white text-[14px] font-normal leading-[18px]"
+                >Plusvalía</span
+              >
+            </div>
+          </div>
+          <div class="px-6 pt-8 space-y-4">
+            <div class="flex justify-between items-center text-xs uppercase">
+              <span class="font-medium">Monto a financiar</span>
+              <span class="text-[14px] font-medium">$60,000.00</span>
+            </div>
+            <hr class="border-t border-shades-off-purple-200 opacity-30" />
+
+            <div class="grid grid-cols-2">
+              <div>
+                <p class="text-[13px] uppercase font-medium mb-1">Plazo</p>
+                <p class="text-[16px] font-light">Hipoteca de 1° grado</p>
+              </div>
+              <div class="flex justify-end gap-6 items-start">
+                <div class="text-center">
+                  <p class="text-[32px] font-extrabold leading-none">12</p>
+                  <p class="text-[14px] font-light">Meses</p>
+                </div>
+                <div class="text-center">
+                  <p
+                    class="text-[32px] font-extrabold leading-none text-alert-notifications-error"
+                  >
+                    14%
+                  </p>
+                  <p class="text-[14px] font-light">Rentabilidad</p>
+                </div>
+              </div>
+            </div>
+            <hr class="border-t border-shades-off-purple-200 opacity-30" />
+
+            <div class="flex items-center gap-5">
+              <p class="uppercase text-[13px] font-medium">Calificación</p>
+              <div class="flex gap-3 pl-18">
+                <span
+                  class="w-7 h-7 flex items-center justify-center rounded-full bg-shades-off-purple-400 text-white text-[14px] font-medium tracking-[0.08em] border border-shades-off-purple-400"
+                  >A</span
+                >
+                <span
+                  class="w-7 h-7 flex items-center justify-center rounded-full text-shades-off-purple-600 text-[14px] font-medium tracking-[0.08em] border border-shades-off-purple-200"
+                  >B</span
+                >
+                <span
+                  class="w-7 h-7 flex items-center justify-center rounded-full text-shades-off-purple-600 text-[14px] font-medium tracking-[0.08em] border border-shades-off-purple-200"
+                  >C</span
+                >
+                <span
+                  class="w-7 h-7 flex items-center justify-center rounded-full text-shades-off-purple-600 text-[14px] font-medium tracking-[0.08em] border border-shades-off-purple-200"
+                  >D</span
+                >
+                <span
+                  class="w-7 h-7 flex items-center justify-center rounded-full text-shades-off-purple-600 text-[14px] font-medium tracking-[0.08em] border border-shades-off-purple-200"
+                  >E</span
+                >
+              </div>
+            </div>
+            <hr class="border-t border-shades-off-purple-200 opacity-30" />
+
+            <div class="flex items-center gap-4">
+              <p class="uppercase text-[13px] font-medium">
+                Cierre de proyecto
+              </p>
+              <div class="flex gap-2">
+                <div
+                  class="w-[48px] h-[28px] flex items-center justify-center border border-shades-off-purple-200 rounded-lg text-[14px] font-medium tracking-[0.08em] text-shades-off-purple-600"
+                >
+                  09d
+                </div>
+                <div
+                  class="w-[48px] h-[28px] flex items-center justify-center border border-shades-off-purple-200 rounded-lg text-[14px] font-medium tracking-[0.08em] text-shades-off-purple-600"
+                >
+                  23h
+                </div>
+                <div
+                  class="w-[48px] h-[28px] flex items-center justify-center border border-shades-off-purple-200 rounded-lg text-[14px] font-medium tracking-[0.08em] text-shades-off-purple-600"
+                >
+                  04m
+                </div>
+                <div
+                  class="w-[48px] h-[28px] flex items-center justify-center border border-shades-off-purple-200 rounded-lg text-[14px] font-medium tracking-[0.08em] text-shades-off-purple-600"
+                >
+                  00s
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="btn btn-primary w-[372px] h-[55px] px-[29px] py-[15px] rounded-full text-[14px] leading-[20px] font-medium uppercase"
+            >
+              Ver detalle
+            </button>
+          </div>
+        </div>
+
+        <hr
+          class="w-[1010px] border-t border-shades-off-purple-200 opacity-30 mt-8 mb-6"
+        />
+
+        <div class="mt-12">
+          <h2
+            class="text-[20px] leading-[24px] font-medium text-shades-off-purple-900 mb-6"
+          >
+            Calcula tu Rentabilidad
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
+            <!-- Tipo de moneda -->
+            <div>
+              <label
+                class="block text-[16px] font-light text-shades-off-purple-900 mb-2"
+                >Tipo de moneda:</label
+              >
+              <div
+                class="h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <label
+                  for="monedaSelect"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Selecciona<span class="text-red-500">*</span>
+                </label>
+                <svg
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  id="monedaSelect"
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Tipo de Moneda</option>
+                  <option>USD</option>
+                  <option>PEN</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Monto a invertir -->
+            <div>
+              <label
+                class="block text-[16px] font-light text-shades-off-purple-900 mb-2"
+                >Monto a invertir</label
+              >
+              <div
+                class="h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <label
+                  for="montoSelect"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Selecciona<span class="text-red-500">*</span>
+                </label>
+                <svg
+                  class="w-4 h-4 text-shades-off-purple-700 absolute right-6 top-1/2 transform -translate-y-1/2 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  id="montoSelect"
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Monto</option>
+                  <option>1000</option>
+                  <option>5000</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Rentabilidad -->
+            <div>
+              <label
+                class="block text-[16px] font-light text-shades-off-purple-900 mb-2"
+                >Rentabilidad:</label
+              >
+              <div class="floating-field-container w-full h-[54px]">
+                <input
+                  type="text"
+                  id="rentabilidad"
+                  placeholder=" "
+                  class="floating-input"
+                />
+                <label
+                  for="rentabilidad"
+                  class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light"
+                >
+                  % <span class="floating-label-required">*</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Plazo -->
+            <div>
+              <label
+                class="block text-[16px] font-light text-shades-off-purple-900 mb-2"
+                >Plazo</label
+              >
+              <div
+                class="h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <label
+                  for="plazoSelect"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Seleccione opción<span class="text-red-500">*</span>
+                </label>
+                <svg
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  id="plazoSelect"
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Seleccione opción</option>
+                  <option>6 meses</option>
+                  <option>12 meses</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Plazo adicional -->
+            <div>
+              <label
+                class="block text-[16px] font-light text-shades-off-purple-900 mb-2"
+                >Plazo:</label
+              >
+              <div
+                class="h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <label
+                  for="plazoExtraSelect"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Seleccione opción<span class="text-red-500">*</span>
+                </label>
+                <svg
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  id="plazoExtraSelect"
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Seleccione opción</option>
+                  <option>Semanal</option>
+                  <option>Mensual</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Amortización -->
+            <div>
+              <label
+                class="block text-[16px] font-light text-shades-off-purple-900 mb-2"
+                >Amortización</label
+              >
+              <div
+                class="h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <label
+                  for="amortizacionSelect"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Seleccione opción<span class="text-red-500">*</span>
+                </label>
+                <svg
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  id="amortizacionSelect"
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Seleccione opción</option>
+                  <option>Mensual</option>
+                  <option>Trimestral</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón -->
+          <div class="mt-8">
+            <button class="btn btn-primary w-[237px] h-[54px] rounded-full">
+              Calcular rentabilidad
+            </button>
+          </div>
+        </div>
+
+        <!-- Resultado rentabilidad -->
+        <div class="mt-8">
+          <label
+            class="block text-[16px] leading-[20px] font-extralight text-grey-colors-900 mb-2"
+          >
+            Rentabilidad de la inversión
+          </label>
+          <input
+            type="text"
+            readonly
+            class="w-full h-[54px] border border-shades-off-purple-500 rounded-[50px]"
+          />
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
