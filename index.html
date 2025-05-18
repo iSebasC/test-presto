@@ -319,6 +319,95 @@
             <button class="btn btn-primary">ENVIAR SOLICITUD</button>
           </div>
         </div>
+
+        <br /><br />
+
+        <section class="space-y-6 text-shades-off-purple-900">
+          <h2 class="text-[20px] leading-[24px] font-medium">Retiro</h2>
+
+          <p class="text-[16px] leading-[22px] font-light text-[#000]">
+            ¡Retira tus fondos en pocos pasos! Una vez recibida tu solicitud,
+            nuestro Fideicomiso procederá al desembolso de inmediato.
+          </p>
+
+          <div class="flex gap-10 items-start">
+            <div class="flex flex-col gap-4 w-[394px]">
+              <!-- Campo: Tipo de moneda (alineado horizontalmente) -->
+              <div
+                class="w-[394px] h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <label
+                  for="monedaSelect"
+                  class="text-grey-colors-400 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Tipo de Moneda <span class="text-red-500">*</span>
+                </label>
+
+                <!-- SVG dropdown -->
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+
+                <!-- Select invisible encima -->
+                <select
+                  id="monedaSelect"
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Tipo de Moneda</option>
+                  <option>USD</option>
+                  <option>PEN</option>
+                </select>
+              </div>
+
+              <div class="floating-field-container w-[394px] h-[54px]">
+                <input
+                  type="text"
+                  id="montoRetiro"
+                  placeholder=" "
+                  class="floating-input"
+                />
+                <label
+                  for="montoRetiro"
+                  class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light"
+                >
+                  Monto <span class="floating-label-required">*</span>
+                </label>
+              </div>
+
+              <button
+                class="w-[183px] h-[54px] bg-light-green-500 hover:bg-light-green-600 transition text-white font-medium text-[14px] leading-[20px] uppercase rounded-full"
+              >
+                SOLICITAR RETIRO
+              </button>
+            </div>
+
+            <div class="w-px h-[229px] bg-shades-off-purple-200"></div>
+
+            <div
+              class="w-[391px] h-[153px] border border-dashed border-shades-off-purple-300 rounded-[10px] flex flex-col justify-center items-center gap-4 text-center"
+            >
+              <p
+                class="text-[20px] leading-[24px] font-normal text-shades-off-purple-900"
+              >
+                Codigo de verificación
+              </p>
+              <button
+                class="w-[267px] h-[54px] bg-shades-off-purple-500 hover:bg-shades-off-purple-600 transition text-white text-[14px] leading-[20px] font-medium uppercase rounded-full"
+              >
+                GENERAR CÓDIGO
+              </button>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <script type="module" src="/src/main.ts"></script>
