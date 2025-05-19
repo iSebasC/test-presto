@@ -320,10 +320,12 @@
 
           <!-- Datos Generales -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-5">
+            <!-- Label -->
             <div class="flex flex-col gap-2">
-              <label class="text-[14px] font-normal text-grey-colors-900"
-                >Datos Generales:</label
-              >
+              <label class="text-[14px] font-normal text-grey-colors-900">
+                Datos Generales:
+              </label>
+              <!-- Recaudación -->
               <div
                 class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6"
               >
@@ -340,16 +342,19 @@
               </div>
             </div>
 
+            <!-- Campo Scoring con label fantasma arriba -->
             <div class="flex flex-col gap-2">
-              <label class="text-transparent">.</label>
+              <!-- Label transparente para alinear verticalmente -->
+              <label class="text-transparent text-[14px] font-normal">.</label>
+
               <div
-                class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center justify-between px-6"
+                class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6 justify-between"
               >
                 <p
-                  class="text-[14px] leading-[24px] font-normal text-grey-colors-900"
+                  class="text-[14px] leading-[24px] font-normal text-grey-colors-900 flex items-center gap-1"
                 >
                   <span class="font-medium text-grey-colors-700">Scoring:</span>
-                  <span class="font-light text-grey-colors-400"> A</span>
+                  <span class="font-light text-grey-colors-400">A</span>
                 </p>
                 <svg
                   stroke="currentColor"
@@ -366,6 +371,7 @@
               </div>
             </div>
 
+            <!-- Amortización -->
             <div class="flex flex-col gap-2 col-span-1 md:col-span-2">
               <div
                 class="w-1/2 h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6"
