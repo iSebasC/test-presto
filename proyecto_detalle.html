@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <!-- Título general y botones -->
+        <div class="flex items-center justify-between mb-6">
+          <h2
+            class="text-shades-off-purple-900 font-medium text-[20px] leading-[24px]"
+          >
+            Proyectos inmobiliarios
+          </h2>
+          <div class="flex gap-2">
+            <button
+              class="w-[46px] h-[46px] rounded-full border border-light-green-500 flex items-center justify-center"
+            >
+              <img src="/img/arrow-left.svg" alt="Anterior" class="w-4 h-4" />
+            </button>
+            <button
+              class="w-[46px] h-[46px] rounded-full bg-light-green-500 flex items-center justify-center"
+            >
+              <img src="/img/arrow-right.svg" alt="Siguiente" class="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Contenedor con overflow oculto -->
+        <div class="overflow-hidden mb-8">
+          <!-- Contenedor interno que sí puede desbordarse -->
+          <div class="flex gap-6 w-[1400px]">
+            <img
+              src="/img/agente_inmobiliario.jpg"
+              alt="Agente inmobiliario"
+              class="w-[430px] h-[275px] rounded-[20px] object-cover"
+            />
+            <img
+              src="/img/proyecto2.jpg"
+              alt="Gestión inmobiliaria"
+              class="w-[430px] h-[275px] rounded-[20px] object-cover"
+            />
+            <img
+              src="/img/agente_inmobiliario.jpg"
+              alt="Agente inmobiliario"
+              class="w-[430px] h-[275px] rounded-[20px] object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Línea divisoria -->
+        <hr
+          class="w-full border-t border-shades-off-purple-200 opacity-30 mt-8 mb-6"
+        />
+
+        <!-- CONTENEDOR DE CARDS -->
+        <div
+          class="max-w-[1200px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          <!-- CARD 1: Ubicación y área -->
+          <div
+            class="w-[360px] h-[220px] rounded-[15px] border border-shades-off-purple-100 p-4 flex flex-col gap-2"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-[50px] h-[50px] bg-shades-off-purple-500 rounded-full flex items-center justify-center"
+              >
+                <img src="/img/location.svg" alt="Ubicación" class="w-4 h-5" />
+              </div>
+            </div>
+            <h3
+              class="font-medium text-[20px] leading-[24px] uppercase text-shades-off-purple-900"
+            >
+              Ubicación y área
+            </h3>
+            <div
+              class="mt-2 space-y-1 text-[16px] leading-[20px] text-shades-off-purple-900 font-light"
+            >
+              <div class="flex justify-between items-center">
+                <span>Departamento</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>Lima</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Provincia</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>Lima</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Distrito</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>San Borja</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: Sobre la propiedad -->
+          <div
+            class="w-[360px] h-[220px] rounded-[15px] border border-shades-off-purple-100 p-4 flex flex-col gap-2"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-[50px] h-[50px] bg-shades-off-purple-500 rounded-full flex items-center justify-center"
+              >
+                <img src="/img/grafico.svg" alt="Propiedad" class="w-5 h-5" />
+              </div>
+            </div>
+            <h3
+              class="font-medium text-[20px] leading-[24px] uppercase text-shades-off-purple-900"
+            >
+              Sobre la propiedad
+            </h3>
+            <div
+              class="mt-2 space-y-1 text-[16px] leading-[20px] text-shades-off-purple-900 font-light"
+            >
+              <div class="flex justify-between items-center">
+                <span>Tipo Propiedad</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>Departamento</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Área</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>70 m2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: Plusvalía -->
+          <div
+            class="w-[360px] h-[220px] rounded-[15px] border border-shades-off-purple-100 p-4 flex flex-col gap-2"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-[50px] h-[50px] bg-shades-off-purple-500 rounded-full flex items-center justify-center"
+              >
+                <img src="/img/grafico.svg" alt="Plusvalía" class="w-5 h-5" />
+              </div>
+            </div>
+            <h3
+              class="font-medium text-[20px] leading-[24px] uppercase text-shades-off-purple-900"
+            >
+              Sobre la propiedad
+            </h3>
+            <div
+              class="mt-2 space-y-1 text-[16px] leading-[20px] text-shades-off-purple-900 font-light"
+            >
+              <div class="flex justify-between items-center">
+                <span>Tipo</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>Plusvalía</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Área</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>Dólares</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4: Garantía - Segunda fila, columna 2 -->
+          <div
+            class="w-[360px] h-[220px] lg:col-start-2 rounded-[15px] border border-shades-off-purple-100 p-4 flex flex-col gap-2"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-[50px] h-[50px] bg-shades-off-purple-500 rounded-full flex items-center justify-center"
+              >
+                <img src="/img/grafico.svg" alt="Garantía" class="w-5 h-5" />
+              </div>
+            </div>
+            <h3
+              class="font-medium text-[20px] leading-[24px] uppercase text-shades-off-purple-900"
+            >
+              Garantía
+            </h3>
+            <div
+              class="mt-2 text-[16px] leading-[20px] text-shades-off-purple-900 font-light"
+            >
+              <div class="flex justify-between items-center">
+                <span>Tipo garantía</span>
+                <span
+                  class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                ></span>
+                <span>Hipoteca de 1º grado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5: Fase del proyecto - Segunda fila, columna 3 -->
+          <div
+            class="w-[360px] h-[220px] lg:col-start-3 rounded-[15px] border border-shades-off-purple-100 p-4 flex flex-col gap-2"
+          >
+            <div class="w-full flex justify-between items-start">
+              <div
+                class="w-[50px] h-[50px] bg-shades-off-purple-500 rounded-full flex items-center justify-center"
+              >
+                <img src="/img/grafico.svg" alt="Fase" class="w-5 h-5" />
+              </div>
+            </div>
+            <div class="w-full flex justify-between items-center">
+              <h3
+                class="font-medium text-[20px] leading-[24px] uppercase text-shades-off-purple-900"
+              >
+                Fase del proyecto
+              </h3>
+              <div class="relative w-[60px] h-[60px] translate-y-[-12px]">
+                <svg
+                  class="absolute top-0 left-0 w-full h-full"
+                  style="transform: rotate(135deg)"
+                >
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="26"
+                    stroke="#f5f5f5"
+                    stroke-width="4"
+                    fill="none"
+                  />
+                  <circle
+                    cx="30"
+                    cy="30"
+                    r="26"
+                    stroke="#34D399"
+                    stroke-width="4"
+                    fill="none"
+                    stroke-dasharray="164"
+                    stroke-dashoffset="105"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <div
+                  class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-[14px] leading-[22px] text-shades-off-purple-900 font-light"
+                >
+                  20%
+                </div>
+              </div>
+            </div>
+            <div class="w-full flex justify-between items-center mt-2">
+              <div
+                class="text-[16px] leading-[20px] text-shades-off-purple-900 font-light"
+              >
+                <div class="flex justify-between items-center">
+                  <span>Estado del proyecto</span>
+                  <span
+                    class="w-[130px] border-b border-dotted border-shades-off-purple-100"
+                  ></span>
+                  <span>Fase de inicio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr
+          class="w-full border-t border-shades-off-purple-200 opacity-30 mt-8 mb-6"
+        />
+
+        <div class="mt-6 space-y-4">
+          <h2
+            class="text-shades-off-purple-900 font-medium text-[20px] leading-[24px]"
+          >
+            Información Financiera
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Rentabilidad neta por tipo -->
+            <div class="flex flex-col gap-2">
+              <label class="text-[14px] font-normal text-grey-colors-900"
+                >Rentabilidad neta por tipo:</label
+              >
+              <div
+                class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6"
+              >
+                <p class="text-[14px] leading-[24px] font-normal">
+                  <span class="font-medium text-grey-colors-700"
+                    >Venta Plusvalía:</span
+                  >
+                  <span class="font-light text-grey-colors-400"> 14%</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Plazo por tipo -->
+            <div class="flex flex-col gap-2">
+              <label class="text-[14px] font-normal text-grey-colors-900"
+                >Plazo (meses) por tipo</label
+              >
+              <div
+                class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6"
+              >
+                <p class="text-[14px] leading-[24px] font-normal">
+                  <span class="font-medium text-grey-colors-700"
+                    >Venta plusvalía:</span
+                  >
+                  <span class="font-light text-grey-colors-400"> 12 meses</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Datos Generales -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-5">
+            <div class="flex flex-col gap-2">
+              <label class="text-[14px] font-normal text-grey-colors-900"
+                >Datos Generales:</label
+              >
+              <div
+                class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6"
+              >
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-grey-colors-900"
+                >
+                  <span class="font-medium text-grey-colors-700"
+                    >Recaudación:</span
+                  >
+                  <span class="font-light text-grey-colors-400">
+                    $60,000.00</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2">
+              <label class="text-transparent">.</label>
+              <div
+                class="w-full h-[48px] rounded-full border border-shades-off-purple-600 flex items-center justify-between px-6"
+              >
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-grey-colors-900"
+                >
+                  <span class="font-medium text-grey-colors-700">Scoring:</span>
+                  <span class="font-light text-grey-colors-400"> A</span>
+                </p>
+                <img src="/img/down.svg" alt="Desplegar" class="w-4 h-4" />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-2 col-span-1 md:col-span-2">
+              <div
+                class="w-1/2 h-[48px] rounded-full border border-shades-off-purple-600 flex items-center px-6"
+              >
+                <p
+                  class="text-[14px] leading-[24px] font-normal text-grey-colors-900"
+                >
+                  <span class="font-medium text-grey-colors-700"
+                    >Amortización de capital:</span
+                  >
+                  <span class="font-light text-grey-colors-400">
+                    Semestral</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botón -->
+          <div class="pt-4">
+            <button class="btn btn-primary">SIMULAR INVERSIÓN</button>
+          </div>
+        </div>
+
+        <!-- CUADRO MODALIDAD PLUSVALÍA -->
+        <div
+          class="mt-10 bg-[#F6FDFC] rounded-[20px] w-[1126px] h-[302px] px-10 py-8"
+        >
+          <h3
+            class="text-[20px] leading-[24px] font-medium text-shades-off-purple-900 mb-6"
+          >
+            Modalidad: Plusvalía
+          </h3>
+          <div class="grid grid-cols-3 gap-6 items-start">
+            <!-- Primera columna -->
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <span
+                  class="text-[16px] leading-[22px] text-shades-off-purple-900 w-[160px]"
+                  >Plazo Estimado</span
+                >
+                <span
+                  class="flex-grow border-b border-dotted border-[#34C759]"
+                ></span>
+                <span
+                  class="text-[16px] leading-[22px] text-shades-off-purple-900 whitespace-nowrap"
+                  >12 meses</span
+                >
+              </div>
+              <div class="flex items-center gap-4">
+                <span
+                  class="text-[16px] leading-[22px] text-shades-off-purple-900 w-[160px]"
+                  >Rentabilidad Anual</span
+                >
+                <span
+                  class="flex-grow border-b border-dotted border-[#34C759]"
+                ></span>
+                <span
+                  class="text-[16px] leading-[22px] text-shades-off-purple-900 whitespace-nowrap"
+                  >14%</span
+                >
+              </div>
+              <div class="pt-4">
+                <button class="btn btn-primary">SIMULAR INVERSIÓN</button>
+              </div>
+            </div>
+
+            <!-- Separador -->
+            <div class="flex justify-center">
+              <div class="w-[1px] h-[54px] bg-light-green-700 opacity-30"></div>
+            </div>
+
+            <!-- Tercera columna -->
+            <div class="space-y-4">
+              <div class="flex justify-between">
+                <span
+                  class="text-[16px] leading-[20px] text-shades-off-purple-900"
+                  >Monto a recaudar</span
+                >
+                <span
+                  class="text-[16px] leading-[20px] text-shades-off-purple-600 font-medium"
+                  >$60,000.00</span
+                >
+              </div>
+              <div class="flex justify-between">
+                <span
+                  class="text-[16px] leading-[20px] text-shades-off-purple-900"
+                  >Falta recaudar</span
+                >
+                <span
+                  class="text-[16px] leading-[20px] text-shades-off-purple-600 font-medium"
+                  >$59,800.00</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
