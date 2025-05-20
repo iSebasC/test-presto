@@ -20,6 +20,7 @@ export default defineConfig({
         proyecto_detalle: resolve(__dirname, 'proyecto_detalle.html'),
         notificaciones: resolve(__dirname, 'notificaciones.html'),
         proyecto_inversion: resolve(__dirname, 'proyecto_inversion.html'),
+        tipo_inmueble: resolve(__dirname, 'tipo_inmueble.html'),
       },
     },
   },
