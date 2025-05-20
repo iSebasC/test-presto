@@ -18,6 +18,8 @@ export default defineConfig({
         proyecto: resolve(__dirname, 'proyecto.html'),
         crear_proyecto: resolve(__dirname, 'crear_proyecto.html'),
         proyecto_detalle: resolve(__dirname, 'proyecto_detalle.html'),
+        notificaciones: resolve(__dirname, 'notificaciones.html'),
+        proyecto_inversion: resolve(__dirname, 'proyecto_inversion.html'),
       },
     },
   },

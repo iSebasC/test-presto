@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <!-- Título general -->
+        <h2
+          class="text-shades-off-purple-600 font-medium text-[20px] leading-[24px] mb-6"
+        >
+          Proyecto de Inversión Venta Plusvalía
+        </h2>
+
+        <p
+          class="text-shades-off-purple-600 font-medium text-[17px] leading-[24px] mb-6"
+        >
+          Datos del Proyecto Inmobiliario
+        </p>
+
+        <div class="w-full max-w-[1040px] space-y-6">
+          <!-- Título del proyecto + Tipo de moneda -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Título del proyecto inmobiliario
+              </label>
+              <input
+                type="text"
+                placeholder="Título del proyecto inmobiliario"
+                class="floating-input placeholder:text-grey-colors-500"
+              />
+            </div>
+
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Tipo de moneda
+              </label>
+              <div
+                class="w-full h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <span
+                  class="text-grey-colors-500 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Selecciona
+                </span>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Tipo de Moneda</option>
+                  <option value="USD">Dólares</option>
+                  <option value="PEN">Soles</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Departamento + Provincia + Distrito -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Departamento -->
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Departamento
+              </label>
+              <div
+                class="w-full h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <span
+                  class="text-grey-colors-500 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Selecciona
+                </span>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Departamento</option>
+                  <option>Lima</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Provincia -->
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Provincia
+              </label>
+              <div
+                class="w-full h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <span
+                  class="text-grey-colors-500 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Selecciona
+                </span>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Provincia</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Distrito -->
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Distrito
+              </label>
+              <div
+                class="w-full h-[54px] relative border border-shades-off-purple-300 rounded-[50px] px-6 flex items-center justify-between"
+              >
+                <span
+                  class="text-grey-colors-500 text-[14px] leading-[24px] font-light select-none"
+                >
+                  Selecciona
+                </span>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 448 512"
+                  class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                  />
+                </svg>
+                <select
+                  class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                >
+                  <option disabled selected>Distrito</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dirección + Referencia -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Dirección
+              </label>
+              <input
+                type="text"
+                placeholder="Dirección"
+                class="floating-input placeholder:text-grey-colors-500"
+              />
+            </div>
+
+            <div class="space-y-1">
+              <label
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Referencia
+              </label>
+              <input
+                type="text"
+                placeholder="Referencia"
+                class="floating-input placeholder:text-grey-colors-500"
+              />
+            </div>
+          </div>
+
+          <!-- Resumen del negocio -->
+          <div class="space-y-1">
+            <label
+              class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+            >
+              Resumen del Negocio Inmobiliario
+            </label>
+            <textarea
+              placeholder="Ten en cuenta que debes colocar 100 palabras como máximo."
+              class="floating-textarea placeholder:text-grey-colors-500"
+            ></textarea>
+          </div>
+
+          <!-- Estudio del mercado -->
+          <div class="space-y-1">
+            <label
+              class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+            >
+              Estudio del Mercado Inmobiliario
+            </label>
+            <textarea
+              placeholder="Ten en cuenta que debes colocar 2000 palabras como máximo."
+              class="floating-textarea placeholder:text-grey-colors-500"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
