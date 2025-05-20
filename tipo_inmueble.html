@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/styles/global.css" rel="stylesheet" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <!-- Título general -->
+        <h2
+          class="text-shades-off-purple-700 font-medium text-[20px] leading-[24px] mb-6"
+        >
+          Tipo de Inmueble
+        </h2>
+
+        <p
+          class="text-grey-colors-500 font-medium text-[14px] leading-[24px] mb-6"
+        >
+          Selecciona el tipo de inmueble segun tu preferencia
+        </p>
+
+        <hr class="w-[1010px] border-t border-grey-colors-500 mt-8 mb-6" />
+
+        <div class="flex flex-col md:flex-row gap-8 w-full">
+          <!-- Tabs izquierda -->
+          <aside class="w-full md:w-[180px] space-y-2">
+            <button
+              class="w-full h-[40px] rounded-[10px] bg-shades-off-purple-400 text-white font-semibold text-sm"
+            >
+              Casa Urbana
+            </button>
+            <button
+              class="w-full h-[40px] rounded-[10px] bg-shades-off-purple-100 text-shades-off-purple-500 font-medium text-sm"
+            >
+              Terreno
+            </button>
+            <button
+              class="w-full h-[40px] rounded-[10px] bg-shades-off-purple-100 text-shades-off-purple-500 font-medium text-sm"
+            >
+              Local
+            </button>
+            <button
+              class="w-full h-[40px] rounded-[10px] bg-shades-off-purple-100 text-shades-off-purple-500 font-medium text-sm"
+            >
+              Departamento
+            </button>
+            <button
+              class="w-full h-[40px] rounded-[10px] bg-shades-off-purple-100 text-shades-off-purple-500 font-medium text-sm"
+            >
+              Oficina
+            </button>
+            <button
+              class="w-full h-[40px] rounded-[10px] bg-shades-off-purple-100 text-shades-off-purple-500 font-medium text-sm"
+            >
+              Otros
+            </button>
+          </aside>
+
+          <!-- Formulario derecha -->
+          <section class="flex-1 space-y-6">
+            <h2 class="text-[16px] font-bold text-grey-colors-500">
+              Descripción del inmueble
+            </h2>
+
+            <!-- Secciones con inputs + checkboxes -->
+            <div class="grid md:grid-cols-5 gap-4">
+              <!-- Columna 1 -->
+              <div class="space-y-2">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium"
+                  >Área Terreno M²</label
+                >
+                <input
+                  type="text"
+                  placeholder="Área Terreno"
+                  class="floating-input placeholder:text-grey-colors-500"
+                />
+                <div class="space-y-2 pt-2">
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Repostero de cocina
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Cocina tradicional
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Sala Comedor
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Jardín interior
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Gimnasio
+                  </label>
+                </div>
+              </div>
+
+              <!-- Columna 2 -->
+              <div class="space-y-2">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium"
+                  >Área Construida M²</label
+                >
+                <input
+                  type="text"
+                  placeholder="Área Construida"
+                  class="floating-input placeholder:text-grey-colors-500"
+                />
+                <div class="space-y-2 pt-2">
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Living Comedor
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Jardín exterior
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Video vigilancia
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Estudio
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Jacuzzi
+                  </label>
+                </div>
+              </div>
+
+              <!-- Columna 3 -->
+              <div class="space-y-2">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium"
+                  >Antigüedad</label
+                >
+                <div
+                  class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between"
+                >
+                  <span class="text-grey-colors-500 text-[14px] font-light"
+                    >Selecciona</span
+                  >
+                  <svg
+                    class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                    viewBox="0 0 448 512"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                  </svg>
+                  <select
+                    class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                  >
+                    <option disabled selected>Antigüedad</option>
+                  </select>
+                </div>
+                <div class="space-y-2 pt-2">
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Sala de estar
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Dormitorio principal c/b
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Azotea
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Cerco eléctrico
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Walk in closet
+                  </label>
+                </div>
+              </div>
+
+              <!-- Columna 4 -->
+              <div class="space-y-2">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium"
+                  >Nro. de Pisos</label
+                >
+                <input
+                  type="text"
+                  placeholder="Nro. de pisos"
+                  class="floating-input placeholder:text-grey-colors-500"
+                />
+                <div class="space-y-2 pt-2">
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Kitchenette
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Cuarto de servicio
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Piscina
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Cisterna
+                  </label>
+                  <label class="flex items-center text-shades-off-purple-900">
+                    <input
+                      type="checkbox"
+                      class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                    />Inventario
+                  </label>
+                </div>
+              </div>
+
+              <!-- Columna vacía para ajuste visual -->
+              <div class="hidden md:block"></div>
+            </div>
+
+            <!-- Dormitorios, Baños, Baños de visita -->
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="space-y-1">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+                  >Dormitorios</label
+                >
+                <div
+                  class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between"
+                >
+                  <span class="text-grey-colors-500 text-[14px] font-light"
+                    >Selecciona</span
+                  >
+                  <svg
+                    class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                    viewBox="0 0 448 512"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                  </svg>
+                  <select
+                    class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                  >
+                    <option disabled selected>Dormitorios</option>
+                  </select>
+                </div>
+              </div>
+              <div class="space-y-1">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+                  >Baños</label
+                >
+                <div
+                  class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between"
+                >
+                  <span class="text-grey-colors-500 text-[14px] font-light"
+                    >Selecciona</span
+                  >
+                  <svg
+                    class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                    viewBox="0 0 448 512"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                  </svg>
+                  <select
+                    class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                  >
+                    <option disabled selected>Baños</option>
+                  </select>
+                </div>
+              </div>
+              <div class="space-y-1">
+                <label
+                  class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+                  >Baños de visita</label
+                >
+                <div
+                  class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between"
+                >
+                  <span class="text-grey-colors-500 text-[14px] font-light"
+                    >Selecciona</span
+                  >
+                  <svg
+                    class="w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+                    viewBox="0 0 448 512"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                    />
+                  </svg>
+                  <select
+                    class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none"
+                  >
+                    <option disabled selected>Baños visita</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Servicios públicos -->
+            <div class="space-y-2">
+              <h3
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Servicios Públicos
+              </h3>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Agua
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Electricidad
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Trifásico
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Monofásico
+                </label>
+              </div>
+            </div>
+
+            <!-- Acabados -->
+            <div class="space-y-2">
+              <h3
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Acabados
+              </h3>
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Pisos
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Ventanas
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Revestimientos
+                </label>
+              </div>
+            </div>
+
+            <!-- Estado -->
+            <div class="space-y-2">
+              <h3
+                class="text-shades-off-purple-500 text-[14px] font-medium leading-[16px]"
+              >
+                Estado
+              </h3>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Muy bueno
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Bueno
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Regular
+                </label>
+                <label class="flex items-center text-shades-off-purple-900">
+                  <input
+                    type="checkbox"
+                    class="accent-shades-off-purple-600 border border-shades-off-purple-500 mr-2"
+                  />
+                  Malo
+                </label>
+              </div>
+            </div>
+
+            <!-- Botón enviar -->
+            <div class="flex justify-end">
+              <button class="btn btn-primary">Guardar y Enviar</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="space-y-4 mb-5">
+          <h3
+            class="text-shades-off-purple-700 font-semibold text-[25px] leading-[20px]"
+          >
+            Imágenes del Inmueble
+          </h3>
+
+          <div class="w-full flex justify-center">
+            <div
+              class="w-[771px] h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+            >
+              <div
+                class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+              >
+                <img
+                  src="/img/cloud_upload.svg"
+                  alt="Subir archivo"
+                  class="w-[27.64px] h-[27.64px]"
+                />
+              </div>
+
+              <p
+                class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+              >
+                Elige un archivo o arrástralo y suéltalo aquí
+              </p>
+              <p
+                class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+              >
+                JPEG, PNG y formatos PDF, hasta 50MB
+              </p>
+
+              <button
+                class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+              >
+                EXPLORAR ARCHIVO
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-8 mb-5">
+<!-- DATOS FINANCIEROS DEL PROYECTO -->
+<h2 class="text-[25px] font-bold text-shades-off-purple-700">Datos Financiero del Proyecto</h2>
+<div class="grid md:grid-cols-4 gap-4">
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Precio del inmueble ( compra)</label>
+    <input type="text" placeholder="Precio del inmueble" class="floating-input placeholder:text-grey-colors-500" />
+  </div>
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Valor de venta (Aprox)</label>
+    <input type="text" placeholder="Valor de ventas" class="floating-input placeholder:text-grey-colors-500" />
+  </div>
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Monto a Financiar</label>
+    <input type="text" placeholder="Monto a financiar" class="floating-input placeholder:text-grey-colors-500" />
+  </div>
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Cuota Inicial</label>
+    <input type="text" placeholder="Cuota Inicial" class="floating-input placeholder:text-grey-colors-500" />
+  </div>
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Propuesta de rentabilidad (%)</label>
+    <input type="text" placeholder="%" class="floating-input placeholder:text-grey-colors-500" />
+  </div>
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Plazo de retorno ( Meses)</label>
+    <div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Plazo de retorno</option>
+      </select>
+    </div>
+  </div>
+  <div class="space-y-1">
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">Amortización de capital</label>
+    <div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Amortización</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- REMODELACIÓN -->
+<div class="pt-4">
+  <p class="text-shades-off-purple-900 text-[14px] font-medium">¿Va a remodelar el inmueble?</p>
+  <div class="flex gap-6 pt-1">
+    <label class="flex items-center gap-1 text-grey-colors-400 text-sm">
+      <input type="radio" name="remodelar" />
+      Sí
+    </label>
+    <label class="flex items-center gap-1 text-grey-colors-400 text-sm">
+      <input type="radio" name="remodelar" />
+      No
+    </label>
+  </div>
+</div>
+
+<!-- GARANTÍA -->
+<h2 class="text-[25px] font-bold text-shades-off-purple-700">Garantía</h2>
+<div class="w-full max-w-md space-y-1 mb-6">
+  <label class="text-shades-off-purple-500 text-[14px] font-medium">Tipo de garantía</label>
+  <div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+    <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+    <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+      <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+    </svg>
+    <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+      <option disabled selected>Tipo de garantía</option>
+    </select>
+  </div>
+</div>
+
+<h2 class="text-[25px] font-bold text-shades-off-purple-700">Datos del garante</h2>
+<div class="grid md:grid-cols-4 gap-4">
+  <!-- Nombres completos -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Nombres Completos 
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Nombres Completos *" />
+  </div>
+
+  <!-- Apellidos completos -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Apellidos Completo
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Apellidos Completos *" />
+  </div>
+
+  <!-- Edad -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Edad
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Edad *" />
+  </div>
+
+  <!-- Documento de identidad -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Documento de identidad
+    </label>
+    <div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Selecciona</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- N° Documento -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      N° Documento
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="N° Documento *" />
+  </div>
+
+  <!-- Estado Civil -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Estado Civil
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Estado Civil *" />
+  </div>
+
+  <!-- Carga Familiar -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Carga Familiar
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Carga Familiar *" />
+  </div>
+
+  <!-- Fecha de Nacimiento -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Fecha de Nacimiento
+    </label>
+    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Fecha de Nacimiento *" />
+  </div>
+
+  <!-- Domicilio -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Domicilio
+    </label>
+<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Selecciona</option>
+      </select>
+    </div>  </div>
+
+  <!-- Departamento -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Departamento
+    </label>
+<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Selecciona</option>
+      </select>
+    </div>  </div>
+
+  <!-- Provincia -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Provincia
+    </label>
+<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Selecciona</option>
+      </select>
+    </div>  </div>
+
+  <!-- Distrito -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Distrito
+    </label>
+<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
+      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
+      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
+        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+      </svg>
+      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
+        <option disabled selected>Selecciona</option>
+      </select>
+    </div>  </div>
+
+  <!-- Correo electrónico -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Correo electrónico
+    </label>
+    <input type="email" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Correo electrónico *" />
+  </div>
+
+  <!-- Celular -->
+  <div>
+    <label class="text-shades-off-purple-500 text-[14px] font-medium">
+      Celular
+    </label>
+    <input type="tel" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Celular *" />
+  </div>
+
+  <!-- Dos divs vacíos para cuadrar -->
+  <div></div>
+  <div></div>
+</div>
+
+
+<div class="flex justify-end pt-6">
+  <button class="btn btn-primary">Guardar y Enviar</button>
+</div>
+
+
+
+
+
+</div>
+
+
+        <div class="space-y-6 mb-5">
+          <div>
+            <h2
+              class="text-[25px] font-semibold leading-[24px] text-shades-off-purple-700"
+            >
+              Archivos Adjuntos (requeridos)
+            </h2>
+            <p
+              class="text-[14px] font-semibold text-shades-off-purple-900 mt-1"
+            >
+              Importante: Solo se aceptan archivos en formato PDF
+            </p>
+            <p
+              class="text-[14px] font-normal text-grey-colors-400 leading-[20px]"
+            >
+              Para asegurarnos de que tus documentos se procesen correctamente y
+              para mantener la uniformidad en nuestros archivos, únicamente
+              aceptamos documentos en formato PDF
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Copia DNI propietarios
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                P. Registral de la propiedad
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                CRI - Certificado inmobiliario
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Impuestos predial: HR del año
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Parámetros urbanisticos ( si es terreno)
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Impuestos predial : PU del año
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Documentación del Garante
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <!-- ...repite por cada documento necesario... -->
+          </div>
+
+          <!-- Botón inferior -->
+          <div class="flex justify-end">
+            <button class="btn btn-primary">Guardar y Enviar</button>
+          </div>
+        </div>
+
+        <div class="space-y-6 mb-5">
+          <div>
+            <h2
+              class="text-[25px] font-semibold leading-[24px] text-shades-off-purple-700"
+            >
+              Gastos Administrativos
+            </h2>
+            <p
+              class="text-[14px] font-semibold text-shades-off-purple-900 mt-1"
+            >
+              Importante: Solo se aceptan archivos en formato PDF
+            </p>
+            <p
+              class="text-[14px] font-normal text-grey-colors-400 leading-[20px]"
+            >
+              Para garantizar que tus documentos se procesen correctamente y
+              mantener la uniformidad en nuestros registros, únicamente se
+              permiten archivos en formato PDF. Por favor, verifica que tus
+              documentos estén en este formato antes de adjuntarlos. Si cuentas
+              con archivos en otro formato, te recomendamos convertirlos a PDF
+              antes de subirlos. Agradecemos tu comprensión y colaboración.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Tasación comercial
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Informe Legal
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-[14px] font-medium text-shades-off-purple-900">
+                Estudio de Mercado
+              </p>
+              <div
+                class="w-full h-[240px] border border-dashed border-shades-off-purple-300 rounded-[15px] p-8 flex flex-col items-center justify-center text-center space-y-4"
+              >
+                <div
+                  class="w-[57.59px] aspect-square rounded-full border border-shades-off-purple-300 flex items-center justify-center"
+                >
+                  <img
+                    src="/img/cloud_upload.svg"
+                    alt="Subir archivo"
+                    class="w-[27.64px] h-[27.64px]"
+                  />
+                </div>
+                <p
+                  class="text-[16px] leading-[20px] font-medium text-shades-off-purple-900"
+                >
+                  Elige un archivo o arrástralo y suéltalo aquí
+                </p>
+                <p
+                  class="text-[12px] leading-[16px] font-normal text-shades-off-purple-900"
+                >
+                  JPEG, PNG y formatos PDF, hasta 50MB
+                </p>
+                <button
+                  class="w-[192.11px] border border-shades-off-purple-300 text-shades-off-purple-700 rounded-[50px] text-[12px] leading-[22px] font-[700] uppercase flex items-center justify-center py-[14.89px] transition-all"
+                >
+                  EXPLORAR ARCHIVO
+                </button>
+              </div>
+            </div>
+
+            <!-- ...repite por cada documento necesario... -->
+          </div>
+
+          <!-- Botón inferior -->
+          <div class="flex justify-end">
+            <button class="btn btn-primary">Guardar y Enviar</button>
+          </div>
+        </div>
+
+        <style>
+          input[type="checkbox"] {
+            border: 1px solid var(--color-shades-off-purple-500);
+          }
+          label {
+            color: var(--color-shades-off-purple-900);
+          }
+        </style>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
