@@ -593,158 +593,131 @@
 
 <h2 class="text-[25px] font-bold text-shades-off-purple-700">Datos del garante</h2>
 <div class="grid md:grid-cols-4 gap-4">
-  <!-- Nombres completos -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Nombres Completos 
+
+  <!-- Nombres Completos -->
+  <div class="floating-field-container w-full">
+    <input type="text" id="nombresInput" placeholder=" " class="floating-input" />
+    <label for="nombresInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Nombres Completos <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Nombres Completos *" />
   </div>
 
-  <!-- Apellidos completos -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Apellidos Completo
+  <!-- Apellidos Completos -->
+  <div class="floating-field-container w-full">
+    <input type="text" id="apellidosInput" placeholder=" " class="floating-input" />
+    <label for="apellidosInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Apellidos Completos <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Apellidos Completos *" />
   </div>
 
   <!-- Edad -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Edad
+  <div class="floating-field-container w-full">
+    <input type="text" id="edadInput" placeholder=" " class="floating-input" />
+    <label for="edadInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Edad <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Edad *" />
   </div>
 
-  <!-- Documento de identidad -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Documento de identidad
+  <!-- Tipo de Documento -->
+  <div class="floating-field-container w-full">
+    <select id="tipoDocumentoInput" placeholder=" " class="floating-input">
+      <option disabled selected value="">Selecciona</option>
+    </select>
+    <label for="tipoDocumentoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Tipo de Documento <span class="text-red-500">*</span>
     </label>
-    <div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
-      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
-      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
-        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-      </svg>
-      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
-        <option disabled selected>Selecciona</option>
-      </select>
-    </div>
   </div>
 
   <!-- N° Documento -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      N° Documento
+  <div class="floating-field-container w-full">
+    <input type="text" id="numeroDocumentoInput" placeholder=" " class="floating-input" />
+    <label for="numeroDocumentoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      N° Documento <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="N° Documento *" />
   </div>
 
   <!-- Estado Civil -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Estado Civil
+  <div class="floating-field-container w-full">
+    <input type="text" id="estadoCivilInput" placeholder=" " class="floating-input" />
+    <label for="estadoCivilInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Estado Civil <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Estado Civil *" />
   </div>
 
   <!-- Carga Familiar -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Carga Familiar
+  <div class="floating-field-container w-full">
+    <input type="text" id="cargaFamiliarInput" placeholder=" " class="floating-input" />
+    <label for="cargaFamiliarInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Carga Familiar <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Carga Familiar *" />
   </div>
 
   <!-- Fecha de Nacimiento -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Fecha de Nacimiento
+  <div class="floating-field-container w-full">
+    <input type="text" id="fechaNacimientoInput" placeholder=" " class="floating-input" />
+    <label for="fechaNacimientoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Fecha de Nacimiento <span class="text-red-500">*</span>
     </label>
-    <input type="text" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Fecha de Nacimiento *" />
   </div>
 
-  <!-- Domicilio -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Domicilio
-    </label>
-<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
-      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
-      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
-        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-      </svg>
-      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
-        <option disabled selected>Selecciona</option>
-      </select>
-    </div>  </div>
+<!-- Domicilio -->
+<div class="floating-field-container w-full">
+  <input type="text" id="domicilioInput" placeholder=" " class="floating-input" />
+  <label for="domicilioInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+    Domicilio <span class="text-red-500">*</span>
+  </label>
+</div>
+
 
   <!-- Departamento -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Departamento
+  <div class="floating-field-container w-full">
+    <select id="departamentoInput" placeholder=" " class="floating-input">
+      <option disabled selected value="">Selecciona</option>
+    </select>
+    <label for="departamentoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Departamento <span class="text-red-500">*</span>
     </label>
-<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
-      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
-      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
-        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-      </svg>
-      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
-        <option disabled selected>Selecciona</option>
-      </select>
-    </div>  </div>
+  </div>
 
   <!-- Provincia -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Provincia
+  <div class="floating-field-container w-full">
+    <select id="provinciaInput" placeholder=" " class="floating-input">
+      <option disabled selected value="">Selecciona</option>
+    </select>
+    <label for="provinciaInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Provincia <span class="text-red-500">*</span>
     </label>
-<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
-      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
-      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
-        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-      </svg>
-      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
-        <option disabled selected>Selecciona</option>
-      </select>
-    </div>  </div>
+  </div>
 
   <!-- Distrito -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Distrito
+  <div class="floating-field-container w-full">
+    <select id="distritoInput" placeholder=" " class="floating-input">
+      <option disabled selected value="">Selecciona</option>
+    </select>
+    <label for="distritoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Distrito <span class="text-red-500">*</span>
     </label>
-<div class="relative border border-shades-off-purple-300 rounded-full px-6 h-[54px] flex items-center justify-between">
-      <span class="text-grey-colors-500 text-[14px] font-light">Selecciona</span>
-      <svg class="w-4 h-4 text-shades-off-purple-700 pointer-events-none" viewBox="0 0 448 512" fill="currentColor">
-        <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
-      </svg>
-      <select class="absolute inset-0 w-full h-full opacity-0 cursor-pointer appearance-none">
-        <option disabled selected>Selecciona</option>
-      </select>
-    </div>  </div>
+  </div>
 
-  <!-- Correo electrónico -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Correo electrónico
+  <!-- Correo Electrónico -->
+  <div class="floating-field-container w-full">
+    <input type="email" id="correoInput" placeholder=" " class="floating-input" />
+    <label for="correoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Correo Electrónico <span class="text-red-500">*</span>
     </label>
-    <input type="email" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Correo electrónico *" />
   </div>
 
   <!-- Celular -->
-  <div>
-    <label class="text-shades-off-purple-500 text-[14px] font-medium">
-      Celular
+  <div class="floating-field-container w-full">
+    <input type="tel" id="celularInput" placeholder=" " class="floating-input" />
+    <label for="celularInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
+      Celular <span class="text-red-500">*</span>
     </label>
-    <input type="tel" class="w-full h-[54px] border border-shades-off-purple-300 rounded-full px-6" placeholder="Celular *" />
   </div>
 
-  <!-- Dos divs vacíos para cuadrar -->
-  <div></div>
-  <div></div>
 </div>
+
+
 
 
 <div class="flex justify-end pt-6">
