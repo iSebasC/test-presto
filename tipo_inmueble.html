@@ -619,14 +619,22 @@
   </div>
 
   <!-- Tipo de Documento -->
-  <div class="floating-field-container w-full">
-    <select id="tipoDocumentoInput" placeholder=" " class="floating-input">
-      <option disabled selected value="">Selecciona</option>
-    </select>
-    <label for="tipoDocumentoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
-      Tipo de Documento <span class="text-red-500">*</span>
-    </label>
-  </div>
+<div class="floating-field-container w-full relative">
+  <select id="tipoDocumentoInput" placeholder=" " class="floating-input appearance-none pr-10">
+    <option disabled selected value="">Selecciona</option>
+    <option value="DNI">DNI</option>
+    <option value="CE">Carnet de extranjería</option>
+  </select>
+  <label for="tipoDocumentoInput" class="floating-label top-[5px] lg:top-[6px] text-grey-colors-400 text-[14px] leading-[24px] font-light">
+    Tipo de Documento <span class="text-red-500">*</span>
+  </label>
+  <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+       viewBox="0 0 448 512" fill="currentColor">
+    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 
+             306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+  </svg>
+</div>
+
 
   <!-- N° Documento -->
   <div class="floating-field-container w-full">
@@ -670,34 +678,58 @@
 
 
   <!-- Departamento -->
-  <div class="floating-field-container w-full">
-    <select id="departamentoInput" placeholder=" " class="floating-input">
-      <option disabled selected value="">Selecciona</option>
-    </select>
-    <label for="departamentoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
-      Departamento <span class="text-red-500">*</span>
-    </label>
-  </div>
+<div class="floating-field-container w-full relative">
+  <select id="departamentoInput" placeholder=" " class="floating-input appearance-none pr-10">
+    <option disabled selected value="">Selecciona</option>
+    <option value="Lima">Lima</option>
+    <option value="Cusco">Cusco</option>
+  </select>
+  <label for="departamentoInput" class="floating-label top-[5px] lg:top-[6px] text-grey-colors-400 text-[14px] leading-[24px] font-light">
+    Departamento <span class="text-red-500">*</span>
+  </label>
+  <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+       viewBox="0 0 448 512" fill="currentColor">
+    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 
+             306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+  </svg>
+</div>
+
 
   <!-- Provincia -->
-  <div class="floating-field-container w-full">
-    <select id="provinciaInput" placeholder=" " class="floating-input">
-      <option disabled selected value="">Selecciona</option>
-    </select>
-    <label for="provinciaInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
-      Provincia <span class="text-red-500">*</span>
-    </label>
-  </div>
+<div class="floating-field-container w-full relative">
+  <select id="provinciaInput" placeholder=" " class="floating-input appearance-none pr-10">
+    <option disabled selected value="">Selecciona</option>
+    <option value="Lima">Lima</option>
+    <option value="Urubamba">Urubamba</option>
+  </select>
+  <label for="provinciaInput" class="floating-label top-[5px] lg:top-[6px] text-grey-colors-400 text-[14px] leading-[24px] font-light">
+    Provincia <span class="text-red-500">*</span>
+  </label>
+  <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+       viewBox="0 0 448 512" fill="currentColor">
+    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 
+             306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+  </svg>
+</div>
+
 
   <!-- Distrito -->
-  <div class="floating-field-container w-full">
-    <select id="distritoInput" placeholder=" " class="floating-input">
-      <option disabled selected value="">Selecciona</option>
-    </select>
-    <label for="distritoInput" class="floating-label text-grey-colors-400 text-[14px] leading-[24px] font-light">
-      Distrito <span class="text-red-500">*</span>
-    </label>
-  </div>
+<div class="floating-field-container w-full relative">
+  <select id="distritoInput" placeholder=" " class="floating-input appearance-none pr-10">
+    <option disabled selected value="">Selecciona</option>
+    <option value="Miraflores">Miraflores</option>
+    <option value="San Isidro">San Isidro</option>
+  </select>
+  <label for="distritoInput" class="floating-label top-[5px] lg:top-[6px] text-grey-colors-400 text-[14px] leading-[24px] font-light">
+    Distrito <span class="text-red-500">*</span>
+  </label>
+  <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-shades-off-purple-700 pointer-events-none"
+       viewBox="0 0 448 512" fill="currentColor">
+    <path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 
+             306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+  </svg>
+</div>
+
 
   <!-- Correo Electrónico -->
   <div class="floating-field-container w-full">
